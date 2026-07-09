@@ -7,8 +7,11 @@ O script automatiza a instalação e configuração de barreiras de proteção, 
 ## 🛡️ O que este script faz?
 
 1. **Atualização de Segurança:** Garante que o gerenciador de pacotes do sistema esteja atualizado com as últimas correções.
+   
 2. **Firewall Estrito (UFW):** Bloqueia todo o tráfego de entrada por padrão (deny incoming), liberando explicitamente apenas as portas essenciais de redes (22/SSH, 80/HTTP, 443/HTTPS).
+
 3. **Proteção contra Força Bruta (Fail2Ban):** Monitora os logs do sistema e bane temporariamente (por 1 hora) IPs que errarem a senha do SSH mais de 3 vezes consecutivas.
+
 4. **SSH Hardening:** Desabilita o acesso direto do usuário root via SSH, mitigando ataques direcionados ao superusuário.
 
 ## 🚀 Como Executar o Projeto
