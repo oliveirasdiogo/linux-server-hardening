@@ -20,21 +20,29 @@ O script automatiza a instalação e configuração de barreiras de proteção, 
 ### Passo a Passo
 
 1. Clone este repositório para o seu servidor:
+```bash
 git clone https://github.com/oliveirasdiogo/linux-server-hardening.git
 cd linux-server-hardening
-
+```  
 2. Dê permissão de execução para o script Bash:
+```bash
 chmod +x setup-security.sh
+```
 
 3. Execute o script com privilégios de administrador:
+```bash
 sudo ./setup-security.sh
-
+```
 ## 🔍 Verificando o Status de Redes
 
 Após a execução, você pode conferir as tabelas de regras ativas e o monitoramento através dos comandos:
 
 * Verificar Firewall:
+```bash
 sudo ufw status verbose
+```
 
 * Verificar Proteção SSH:
+```bash
 sudo fail2ban-client status sshd
+```
